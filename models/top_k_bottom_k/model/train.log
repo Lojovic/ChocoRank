@@ -1,0 +1,79 @@
+$ python3 /home/ubuntu/Desktop/Studije/Alati/Rank/src/main_csp_rank.py --dataset /home/ubuntu/Desktop/Studije/Alati/Rank/ChocoRank/rank/data/dataset.json --instance_features /home/ubuntu/Desktop/Studije/Alati/Rank/ChocoRank/rank/data/instance_features.csv --train_dir /home/ubuntu/Desktop/Studije/Alati/Rank/ChocoRank/models/optuna_topk_bottomk_hard_test/trial_0013 --hparams learning_rate=0.0002897333298981117,pl_margin=2.649907147953188,hidden_units=256,num_blocks=3,prop_embedding_size=64,num_heads=2,dropout_rate=0.046768220718076334,activation=relu,max_gradient_norm=5.0 --max_steps 5000 --eval_every 100 --min_pair_runtime_ratio 0.09696132147947188 --pair_sampling_strategy topk_bottomk --pair_keep_floor 0.30092928284314213 --pair_sampling_seed 13 --pair_top_k 2 --timeout_penalty_multiplier 1.0 --validation_timeout_penalty_multiplier 1.0 --split_strategy within_class_stratified --valid_ratio 0.15 --test_ratio 0.15 --difficulty_buckets 3 --timeout_ms 1200000 --min_class_instances 7 --small_class_policy test
+
+Reading CSP data...
+Examples: {'train': 2672, 'valid': 571, 'test': 698}
+Propagators: 62
+Instance features: 77
+Max propagators per instance: 12
+Max runs per instance: 20
+Max pairs per instance: 4
+Pair runtime ratio reference: 0.09696132147947188
+Pair sampling strategy: topk_bottomk
+Pair keep floor: 0.30092928284314213
+Pair top K: 2
+Training timeout penalty multiplier: 1.0
+Validation timeout penalty multiplier: 1.0
+Total kept pairs: 13726
+step 1 train_loss 2.755355 grad_norm 12.678814 valid_loss 2.556122 valid_expected_runtime 87723063.047852 elapsed 1.3s
+Exported 53 tensors to /home/ubuntu/Desktop/Studije/Alati/Rank/ChocoRank/models/optuna_topk_bottomk_hard_test/trial_0013/numpy_weights.npz
+step 100 train_loss 1.577182 grad_norm 6.439864 valid_loss 1.868557 valid_expected_runtime 72345923.674316 elapsed 8.6s
+Exported 53 tensors to /home/ubuntu/Desktop/Studije/Alati/Rank/ChocoRank/models/optuna_topk_bottomk_hard_test/trial_0013/numpy_weights.npz
+step 200 train_loss 1.103538 grad_norm 5.548070 valid_loss 1.871264 valid_expected_runtime 72493928.862305 elapsed 15.0s
+step 300 train_loss 1.713046 grad_norm 8.273533 valid_loss 1.860844 valid_expected_runtime 71828576.044678 elapsed 21.1s
+Exported 53 tensors to /home/ubuntu/Desktop/Studije/Alati/Rank/ChocoRank/models/optuna_topk_bottomk_hard_test/trial_0013/numpy_weights.npz
+step 400 train_loss 1.372229 grad_norm 3.340753 valid_loss 1.780305 valid_expected_runtime 70012750.277100 elapsed 27.4s
+Exported 53 tensors to /home/ubuntu/Desktop/Studije/Alati/Rank/ChocoRank/models/optuna_topk_bottomk_hard_test/trial_0013/numpy_weights.npz
+step 500 train_loss 0.710795 grad_norm 3.396378 valid_loss 1.692955 valid_expected_runtime 69881851.855469 elapsed 33.6s
+Exported 53 tensors to /home/ubuntu/Desktop/Studije/Alati/Rank/ChocoRank/models/optuna_topk_bottomk_hard_test/trial_0013/numpy_weights.npz
+step 600 train_loss 1.598909 grad_norm 3.337879 valid_loss 1.723088 valid_expected_runtime 69671725.328613 elapsed 39.9s
+Exported 53 tensors to /home/ubuntu/Desktop/Studije/Alati/Rank/ChocoRank/models/optuna_topk_bottomk_hard_test/trial_0013/numpy_weights.npz
+step 700 train_loss 1.536327 grad_norm 4.355027 valid_loss 1.739099 valid_expected_runtime 69747531.415527 elapsed 46.2s
+step 800 train_loss 0.861895 grad_norm 4.481591 valid_loss 1.780908 valid_expected_runtime 69638057.831299 elapsed 52.3s
+Exported 53 tensors to /home/ubuntu/Desktop/Studije/Alati/Rank/ChocoRank/models/optuna_topk_bottomk_hard_test/trial_0013/numpy_weights.npz
+step 900 train_loss 0.780229 grad_norm 4.474478 valid_loss 1.791770 valid_expected_runtime 69884540.864746 elapsed 58.9s
+step 1000 train_loss 1.026947 grad_norm 4.536291 valid_loss 1.729915 valid_expected_runtime 69486584.359131 elapsed 65.2s
+Exported 53 tensors to /home/ubuntu/Desktop/Studije/Alati/Rank/ChocoRank/models/optuna_topk_bottomk_hard_test/trial_0013/numpy_weights.npz
+step 1100 train_loss 1.358574 grad_norm 3.662657 valid_loss 1.855632 valid_expected_runtime 68151377.819824 elapsed 71.6s
+Exported 53 tensors to /home/ubuntu/Desktop/Studije/Alati/Rank/ChocoRank/models/optuna_topk_bottomk_hard_test/trial_0013/numpy_weights.npz
+step 1200 train_loss 1.434219 grad_norm 4.829158 valid_loss 1.732247 valid_expected_runtime 69884558.978027 elapsed 77.8s
+step 1300 train_loss 1.153217 grad_norm 3.228733 valid_loss 1.864209 valid_expected_runtime 69436463.552490 elapsed 84.0s
+step 1400 train_loss 1.667858 grad_norm 2.428307 valid_loss 1.707686 valid_expected_runtime 70326541.857666 elapsed 90.1s
+step 1500 train_loss 1.423887 grad_norm 3.124973 valid_loss 1.813225 valid_expected_runtime 68808588.316162 elapsed 96.3s
+step 1600 train_loss 1.523462 grad_norm 4.319520 valid_loss 1.798504 valid_expected_runtime 68755284.149658 elapsed 102.5s
+step 1700 train_loss 1.341086 grad_norm 4.796589 valid_loss 1.670518 valid_expected_runtime 69051012.266357 elapsed 108.7s
+step 1800 train_loss 1.068330 grad_norm 2.808106 valid_loss 1.857355 valid_expected_runtime 68262106.350830 elapsed 114.8s
+step 1900 train_loss 0.994872 grad_norm 3.766362 valid_loss 1.752549 valid_expected_runtime 69615751.062988 elapsed 121.0s
+step 2000 train_loss 1.240572 grad_norm 3.606198 valid_loss 1.802621 valid_expected_runtime 70560663.343262 elapsed 127.1s
+step 2100 train_loss 1.577235 grad_norm 6.408959 valid_loss 1.756340 valid_expected_runtime 70637662.866943 elapsed 133.2s
+step 2200 train_loss 0.698551 grad_norm 3.910097 valid_loss 1.837709 valid_expected_runtime 68803697.901123 elapsed 139.3s
+step 2300 train_loss 0.720593 grad_norm 3.210077 valid_loss 1.799487 valid_expected_runtime 68962465.910156 elapsed 145.6s
+step 2400 train_loss 1.369957 grad_norm 4.659033 valid_loss 2.053001 valid_expected_runtime 67641417.623535 elapsed 151.8s
+Exported 53 tensors to /home/ubuntu/Desktop/Studije/Alati/Rank/ChocoRank/models/optuna_topk_bottomk_hard_test/trial_0013/numpy_weights.npz
+step 2500 train_loss 1.258996 grad_norm 3.602801 valid_loss 1.746234 valid_expected_runtime 68486384.075439 elapsed 158.0s
+step 2600 train_loss 1.014141 grad_norm 5.579849 valid_loss 1.770033 valid_expected_runtime 69280681.228760 elapsed 164.2s
+step 2700 train_loss 0.747322 grad_norm 2.374175 valid_loss 1.869348 valid_expected_runtime 68369206.901855 elapsed 170.3s
+step 2800 train_loss 0.993283 grad_norm 4.453702 valid_loss 1.838944 valid_expected_runtime 68331014.177979 elapsed 176.5s
+step 2900 train_loss 0.828463 grad_norm 1.989661 valid_loss 1.798666 valid_expected_runtime 68034589.775879 elapsed 182.6s
+step 3000 train_loss 0.746386 grad_norm 3.451300 valid_loss 1.775863 valid_expected_runtime 68863023.901611 elapsed 188.9s
+step 3100 train_loss 1.285871 grad_norm 5.234582 valid_loss 1.791994 valid_expected_runtime 68807370.599365 elapsed 195.0s
+step 3200 train_loss 0.912042 grad_norm 2.378055 valid_loss 1.993380 valid_expected_runtime 68386274.680420 elapsed 201.1s
+step 3300 train_loss 0.820580 grad_norm 2.642667 valid_loss 1.967141 valid_expected_runtime 68255878.504150 elapsed 207.2s
+step 3400 train_loss 1.516238 grad_norm 5.974606 valid_loss 1.823455 valid_expected_runtime 68004492.486572 elapsed 213.4s
+step 3500 train_loss 1.959341 grad_norm 6.123188 valid_loss 2.090900 valid_expected_runtime 69000235.382812 elapsed 219.5s
+step 3600 train_loss 0.577213 grad_norm 2.483102 valid_loss 1.867702 valid_expected_runtime 68812510.338867 elapsed 225.7s
+step 3700 train_loss 0.622695 grad_norm 3.890321 valid_loss 2.045758 valid_expected_runtime 68557824.769287 elapsed 232.0s
+step 3800 train_loss 0.911933 grad_norm 3.764113 valid_loss 1.721053 valid_expected_runtime 69077610.952881 elapsed 238.0s
+step 3900 train_loss 0.672013 grad_norm 2.059461 valid_loss 1.991132 valid_expected_runtime 69921159.349121 elapsed 244.2s
+step 4000 train_loss 0.476796 grad_norm 1.997730 valid_loss 1.875956 valid_expected_runtime 68129198.354248 elapsed 250.3s
+step 4100 train_loss 1.506333 grad_norm 3.914217 valid_loss 1.974457 valid_expected_runtime 66093836.586670 elapsed 256.4s
+Exported 53 tensors to /home/ubuntu/Desktop/Studije/Alati/Rank/ChocoRank/models/optuna_topk_bottomk_hard_test/trial_0013/numpy_weights.npz
+step 4200 train_loss 1.136220 grad_norm 2.824420 valid_loss 1.853073 valid_expected_runtime 67712094.798584 elapsed 262.7s
+step 4300 train_loss 1.172255 grad_norm 1.944735 valid_loss 1.867818 valid_expected_runtime 68039703.962891 elapsed 268.8s
+step 4400 train_loss 0.997047 grad_norm 4.442801 valid_loss 1.885247 valid_expected_runtime 69100418.177002 elapsed 275.2s
+step 4500 train_loss 0.790982 grad_norm 3.062933 valid_loss 1.899141 valid_expected_runtime 68946162.284424 elapsed 281.3s
+step 4600 train_loss 0.838444 grad_norm 1.967973 valid_loss 1.794491 valid_expected_runtime 68016847.043945 elapsed 287.4s
+step 4700 train_loss 1.099022 grad_norm 4.763477 valid_loss 1.957110 valid_expected_runtime 69889772.596924 elapsed 293.5s
+step 4800 train_loss 0.953201 grad_norm 2.658522 valid_loss 1.871837 valid_expected_runtime 68613354.797363 elapsed 299.7s
+step 4900 train_loss 0.806541 grad_norm 3.242426 valid_loss 1.854685 valid_expected_runtime 68934864.413330 elapsed 305.8s
+step 5000 train_loss 0.980637 grad_norm 2.659993 valid_loss 1.923938 valid_expected_runtime 68838110.949707 elapsed 311.9s
+test_loss 2.437928 test_expected_runtime 259189507.897034

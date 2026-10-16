@@ -1,0 +1,23 @@
+{
+  "activation": "relu",
+  "best_step": 4500,
+  "best_valid_expected_runtime": 68786903.720459,
+  "dropout_rate": 0.040281818421703655,
+  "elapsed_sec": "340.0",
+  "hidden_units": 256,
+  "learning_rate": 0.00025162690001484994,
+  "log_file": "/home/ubuntu/Desktop/Studije/Alati/Rank/ChocoRank/models/optuna_search_new_data_par/trial_0019/train.log",
+  "max_gradient_norm": 5.0,
+  "min_pair_runtime_ratio": 0.06940250386931647,
+  "num_blocks": 3,
+  "num_heads": 2,
+  "pair_keep_floor": 0.25288183574242606,
+  "pl_margin": 2.795088915349556,
+  "prop_embedding_size": 64,
+  "status": "ok",
+  "test_expected_runtime": "256582043.260193",
+  "test_loss": "2.355912",
+  "timeout_penalty_multiplier": 2.0,
+  "train_dir": "/home/ubuntu/Desktop/Studije/Alati/Rank/ChocoRank/models/optuna_search_new_data_par/trial_0019",
+  "trial_number": 19
+}
